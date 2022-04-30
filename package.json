@@ -7,7 +7,13 @@
         "dev": "NODE_OPTIONS='--inspect'; next dev --port ${PORT-3000}",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "release:beta": "npx standar-version --prerelease beta",
+        "release": "standard-version",
+        "frendly": "commitizen init cz-conventional-changelog --save-dev --save-exact",
+        "alias": "git config —global alias.cz git-cz",
+        "postInstall": "npm -g commitizen; npm run frendly; npm run alias",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
