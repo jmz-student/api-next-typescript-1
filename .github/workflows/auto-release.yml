@@ -18,6 +18,8 @@ jobs:
           node-version: 16.x
       - run: npm install
       - run: npm run release
+      - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
+      - run: git config --global user.name "Jorge Mendez Ortega"
       - run: git checkout develop
       - run: git pull origin master
       - run: git push
