@@ -1,0 +1,22 @@
+name: auto-release
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['16']
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+      - run: git config --global user.email "jorge.mendez.ortega@gmail.com"
+      - run: git config --global user.name "Jorge Mendez Ortega"
+      - run: npm install
+      - run: npm run release
