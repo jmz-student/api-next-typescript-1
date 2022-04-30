@@ -1,6 +1,5 @@
 name: auto-release
 on:
-  push:
   pull_request:
     branches:
       - main
@@ -20,4 +19,4 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: git push --tags origin main
+      - run: echo running on branch ${GITHUB_REF##*/}
