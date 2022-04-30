@@ -1,0 +1,22 @@
+name: auto-release
+on:
+push:
+    pull_request:
+        branches:
+            - main
+jobs:
+    build:
+        runs-in: ubuntu-lastest
+        strategy:
+            matrix:
+                node: ['16']
+        steps:
+            - uses: actions/checkout@v2
+            - name: Setup Node 16
+              uses: actions/setup-node@v2
+              with:
+                node-version: 16.x
+            - run: npm run release
+            - run: git checkout develop
+            - run: git pull origin master
+            - run: git push
