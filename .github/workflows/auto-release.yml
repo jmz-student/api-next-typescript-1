@@ -3,8 +3,6 @@ on:
   pull_request:
     branches:
       - main
-env:
-  RAMA: git branch --show-current
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,5 +19,5 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: fit fetch
+      - run: git fetch
       - run: git pull origin $GITHUB_BASE_REF
