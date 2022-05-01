@@ -21,5 +21,5 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: echo "HOLA ESTOY EN $GITHUB_BASE_REF"
-      - run: echo "$RAMA"
+      - run: fit fetch
+      - run: git pull origin $GITHUB_BASE_REF
