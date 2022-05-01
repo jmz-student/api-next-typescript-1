@@ -19,4 +19,5 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: git push --follow-tags origin HEAD 
+      - run: RAMA=`git branch --show-current`
+      - run: echo $RAMA
