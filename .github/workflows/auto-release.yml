@@ -19,5 +19,4 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: git fetch
-      - run: git pull origin $GITHUB_BASE_REF
+      - run: git push
