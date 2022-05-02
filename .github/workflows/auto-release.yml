@@ -23,3 +23,4 @@ jobs:
       - run: git fetch origin ${GITHUB_REF#refs/}
       - run: git pull origin ${GITHUB_REF#refs/}
       - run: git push origin ${GITHUB_REF#refs/} --force
+      - run: git push origin --follow-tags
