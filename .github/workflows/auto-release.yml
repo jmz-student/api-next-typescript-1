@@ -19,8 +19,6 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: git status
-      - run: git log
-      - run: ls -ls
+      - run: git fetch
+      - run: git pull
       - run: git push origin HEAD:${GITHUB_REF}
-      - run: git push origin --follow-tags
