@@ -2,9 +2,8 @@ name: auto-release
 on:
   push:
   pull_request:
-    branches-ignore:
-      - develop
-      - '\d{2,}'
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
