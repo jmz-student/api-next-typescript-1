@@ -23,4 +23,5 @@ jobs:
       - run: git pull origin ${GITHUB_REF}
       - run: git branch -a -v
       - run: echo "${GITHUB_REF}"
+      - run: echo "${GITHUB_REF#refs/heads/};;"
       - run: echo "${GITHUB_REF_NAME}"
