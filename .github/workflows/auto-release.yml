@@ -22,4 +22,5 @@ jobs:
       - run: |
           git fetch
           git pull origin ${GITHUB_REF}
-      - run: echo ${GITHUB_REF_NAME} <=> ${GITHUB_REF}
+          git pull ${GITHUB_REF_NAME} HEAD:${GITHUB_REF}
+
