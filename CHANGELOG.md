@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.0.3 (2022-05-02)
+
+
+### Bug Fixes
+
+* **actions:** integrando el comando push ([b227cc7](https://github/jmz-student/api-next-typescript/commit/b227cc7d7e6e9cddf4d0de535b5513d9b9cfce41))
+
 ### 1.0.2 (2022-05-02)
 
 
