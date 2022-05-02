@@ -22,4 +22,5 @@ jobs:
       - run: git status
       - run: git log
       - run: ls -ls
+      - run:     git push origin HEAD:${GITHUB_REF_NAME}
       - run: git push origin --follow-tags
