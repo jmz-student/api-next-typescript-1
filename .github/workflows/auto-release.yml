@@ -19,6 +19,7 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
+      - run: echo '::set-output name=SELECTED_COLOR::green'
       - run: |
           git fetch
           git pull origin ${GITHUB_REF}
