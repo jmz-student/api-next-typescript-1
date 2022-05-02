@@ -25,4 +25,4 @@ jobs:
       - run: echo "${GITHUB_REF}"
       - run: echo "${GITHUB_REF#refs/};;"
       - run: echo "${GITHUB_REF_NAME}"
-      - run: git push origin HEAD:${GITHUB_REF#refs/}
+      - run: git push origin HEAD:${GITHUB_REF}
