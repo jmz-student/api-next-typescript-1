@@ -19,10 +19,6 @@ jobs:
       - run: git config --global user.name "Jorge Mendez Ortega"
       - run: npm install
       - run: npm run release
-      - run: git fetch
-      - run: git pull origin ${GITHUB_REF}
-      - run: git branch -a -v
-      - run: echo "${GITHUB_REF}"
-      - run: echo "${GITHUB_REF#refs/};;"
-      - run: echo "${GITHUB_REF_NAME}"
+      - run: git fetch origin ${GITHUB_REF#refs/}
+      - run: git pull origin ${GITHUB_REF#refs/}
       - run: git push origin ${GITHUB_REF#refs/}
