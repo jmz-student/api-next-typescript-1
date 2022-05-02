@@ -2,7 +2,7 @@
     "name": "api-next-typescript",
     "version": "1.0.5",
     "private": true,
-    "description": "Armado de api utilizando TS y NextJS",
+    "description": "Armado de api utilizando TS y NextJS y React",
     "scripts": {
         "dev": "NODE_OPTIONS='--inspect'; next dev --port ${PORT-3000}",
         "build": "next build",
