@@ -22,5 +22,5 @@ jobs:
       - run: |
           git fetch
           git pull origin ${GITHUB_REF}
-          git pull ${GITHUB_REF_NAME} HEAD:${GITHUB_REF}
+          git push ${GITHUB_REF_NAME} HEAD:${GITHUB_REF}
 
