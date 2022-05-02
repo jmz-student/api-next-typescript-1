@@ -20,5 +20,4 @@ jobs:
       - run: npm install
       - run: npm run release
       - run: git fetch
-      - run: git pull origin ${GITHUB_REF}
-      - run: git push origin main
+      - run: git branch -a -v
