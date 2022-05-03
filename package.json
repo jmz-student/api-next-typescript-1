@@ -1,6 +1,6 @@
 {
     "name": "api-next-typescript",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "private": true,
     "description": "Armado de api utilizando TS y NextJS y React",
     "scripts": {
