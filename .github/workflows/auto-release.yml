@@ -24,4 +24,7 @@ jobs:
       - run: git push origin ${GITHUB_REF#refs/} --force
       - run: git push origin --follow-tags
       - run: git fetch --unshallow
-      - run: git checkout develop
+      - run: |
+          git checkout develop
+          git pull
+
