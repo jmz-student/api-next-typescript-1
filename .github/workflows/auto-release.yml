@@ -24,4 +24,4 @@ jobs:
       - run: git push origin ${GITHUB_REF#refs/} --force
       - run: git push origin --follow-tags
       - run: |
-          git branch -a -v
+          git checkout develop
